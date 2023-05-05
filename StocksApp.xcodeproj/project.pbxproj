@@ -7,18 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		801B7E6D2A00A164008750CA /* StocksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E6C2A00A164008750CA /* StocksAppApp.swift */; };
-		801B7E6F2A00A164008750CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E6E2A00A164008750CA /* ContentView.swift */; };
+		8008C4092A02DC7B008341FA /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8008C4082A02DC7B008341FA /* ChatGPTSwift */; };
+		801B7E6D2A00A164008750CA /* StocksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E6C2A00A164008750CA /* StocksApp.swift */; };
+		801B7E6F2A00A164008750CA /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E6E2A00A164008750CA /* MainListView.swift */; };
 		801B7E712A00A166008750CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801B7E702A00A166008750CA /* Assets.xcassets */; };
 		801B7E742A00A166008750CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801B7E732A00A166008750CA /* Preview Assets.xcassets */; };
+		801B7E7C2A00A342008750CA /* StocksAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 801B7E7B2A00A342008750CA /* StocksAPI */; };
+		801B7E7E2A00A342008750CA /* StocksAPIExec in Frameworks */ = {isa = PBXBuildFile; productRef = 801B7E7D2A00A342008750CA /* StocksAPIExec */; };
+		801B7E802A00A3C6008750CA /* TickerListRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E7F2A00A3C6008750CA /* TickerListRowData.swift */; };
+		801B7E862A00A502008750CA /* TickerListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E852A00A502008750CA /* TickerListRowView.swift */; };
+		801B7E892A00A572008750CA /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E882A00A572008750CA /* EmptyStateView.swift */; };
+		801B7E8B2A00A603008750CA /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E8A2A00A602008750CA /* ErrorStateView.swift */; };
+		801B7E8D2A00A644008750CA /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E8C2A00A644008750CA /* LoadingStateView.swift */; };
+		801B7E902A00A674008750CA /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E8F2A00A674008750CA /* AppViewModel.swift */; };
+		801B7E932A00A6F1008750CA /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E922A00A6F1008750CA /* Stubs.swift */; };
+		801B7E952A00A73D008750CA /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E942A00A73D008750CA /* QuotesViewModel.swift */; };
+		801B7E972A00A78A008750CA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E962A00A78A008750CA /* Utils.swift */; };
+		801B7E9A2A00A7C6008750CA /* Quote+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E992A00A7C6008750CA /* Quote+Extensions.swift */; };
+		801B7E9C2A00AD77008750CA /* FetchPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E9B2A00AD77008750CA /* FetchPhase.swift */; };
+		801B7E9E2A00ADC0008750CA /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E9D2A00ADC0008750CA /* SearchViewModel.swift */; };
+		801B7EA02A00AE0A008750CA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7E9F2A00AE0A008750CA /* SearchView.swift */; };
+		801B7EA32A00B31D008750CA /* StocksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EA22A00B31D008750CA /* StocksAPI.swift */; };
+		801B7EA62A00B52A008750CA /* XCAStocksAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 801B7EA52A00B52A008750CA /* XCAStocksAPI */; };
+		801B7EA82A00B582008750CA /* MockStocksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EA72A00B582008750CA /* MockStocksAPI.swift */; };
+		801B7EAA2A00C023008750CA /* TickerListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EA92A00C023008750CA /* TickerListRepository.swift */; };
+		801B7EAC2A00C064008750CA /* MockTickerListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EAB2A00C064008750CA /* MockTickerListRepository.swift */; };
+		801B7EB12A00CFB3008750CA /* StockTickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EB02A00CFB3008750CA /* StockTickerView.swift */; };
+		801B7EB32A00CFC8008750CA /* TickerQuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EB22A00CFC8008750CA /* TickerQuoteViewModel.swift */; };
+		801B7EB52A00D1CE008750CA /* DateRangePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EB42A00D1CE008750CA /* DateRangePickerView.swift */; };
+		801B7EB92A00D312008750CA /* QuoteDetailRowColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EB82A00D312008750CA /* QuoteDetailRowColumnView.swift */; };
+		801B7EBB2A00D360008750CA /* Foundation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EBA2A00D360008750CA /* Foundation+Extensions.swift */; };
+		801B7EBD2A01941C008750CA /* ChartViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EBC2A01941C008750CA /* ChartViewData.swift */; };
+		801B7EBF2A019493008750CA /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EBE2A019493008750CA /* ChartViewModel.swift */; };
+		801B7EC12A019600008750CA /* Chart+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EC02A019600008750CA /* Chart+Stubs.swift */; };
+		801B7EC32A0196C2008750CA /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EC22A0196C2008750CA /* ChartView.swift */; };
+		801B7EC52A01B236008750CA /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EC42A01B236008750CA /* LearnView.swift */; };
+		801B7EC72A01B92A008750CA /* YTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EC62A01B92A008750CA /* YTView.swift */; };
+		801B7EC92A01F050008750CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 801B7EC82A01F050008750CA /* GoogleService-Info.plist */; };
+		801B7ECC2A01F15E008750CA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 801B7ECB2A01F15E008750CA /* FirebaseAuth */; };
+		801B7ECE2A01F15E008750CA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 801B7ECD2A01F15E008750CA /* FirebaseDatabase */; };
+		801B7ED02A01F15E008750CA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 801B7ECF2A01F15E008750CA /* FirebaseFirestore */; };
+		801B7ED22A01F15E008750CA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 801B7ED12A01F15E008750CA /* FirebaseFirestoreSwift */; };
+		801B7ED42A01F1D9008750CA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7ED32A01F1D9008750CA /* Home.swift */; };
+		801B7ED62A01F315008750CA /* BlogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7ED52A01F315008750CA /* BlogApp.swift */; };
+		801B7ED82A01F87B008750CA /* BlogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7ED72A01F87B008750CA /* BlogViewModel.swift */; };
+		801B7EDA2A01F890008750CA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7ED92A01F890008750CA /* Post.swift */; };
+		801B7EDC2A01FE71008750CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EDB2A01FE71008750CA /* ContentView.swift */; };
+		801B7EDE2A0211FE008750CA /* CreatePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EDD2A0211FE008750CA /* CreatePost.swift */; };
+		801B7EE02A021623008750CA /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B7EDF2A021623008750CA /* TextView.swift */; };
+		801B7EE72A0255E1008750CA /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 801B7EE62A0255E1008750CA /* OpenAISwift */; };
+		8033EADE2A04FB2800969255 /* Foundation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033EADB2A04FB2700969255 /* Foundation+Extensions.swift */; };
+		8033EADF2A04FB2800969255 /* ChartRange+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033EADC2A04FB2700969255 /* ChartRange+Extensions.swift */; };
+		8033EAE02A04FB2800969255 /* Quote+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033EADD2A04FB2700969255 /* Quote+Extensions.swift */; };
+		8052099E2A02D65100A0B4D3 /* ChatGPTAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8052099D2A02D65100A0B4D3 /* ChatGPTAPIModels.swift */; };
+		805209A82A02D6A300A0B4D3 /* DotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805209A22A02D6A300A0B4D3 /* DotLoadingView.swift */; };
+		808665072A04F99A001CF313 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 808665062A04F99A001CF313 /* GoogleService-Info.plist */; };
+		8086650F2A04FA6D001CF313 /* ChartRange+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086650E2A04FA6D001CF313 /* ChartRange+Extensions.swift */; };
+		80A9FD182A02F1F6008012E4 /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9FD172A02F1F6008012E4 /* ContentView1.swift */; };
+		80ABDF162A04D51000D96CD2 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ABDF152A04D51000D96CD2 /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		801B7E692A00A164008750CA /* StocksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		801B7E6C2A00A164008750CA /* StocksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppApp.swift; sourceTree = "<group>"; };
-		801B7E6E2A00A164008750CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		801B7E6C2A00A164008750CA /* StocksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApp.swift; sourceTree = "<group>"; };
+		801B7E6E2A00A164008750CA /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		801B7E702A00A166008750CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		801B7E732A00A166008750CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		801B7E7F2A00A3C6008750CA /* TickerListRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListRowData.swift; sourceTree = "<group>"; };
+		801B7E852A00A502008750CA /* TickerListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListRowView.swift; sourceTree = "<group>"; };
+		801B7E882A00A572008750CA /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		801B7E8A2A00A602008750CA /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
+		801B7E8C2A00A644008750CA /* LoadingStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
+		801B7E8F2A00A674008750CA /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		801B7E922A00A6F1008750CA /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		801B7E942A00A73D008750CA /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		801B7E962A00A78A008750CA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		801B7E992A00A7C6008750CA /* Quote+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+Extensions.swift"; sourceTree = "<group>"; };
+		801B7E9B2A00AD77008750CA /* FetchPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhase.swift; sourceTree = "<group>"; };
+		801B7E9D2A00ADC0008750CA /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		801B7E9F2A00AE0A008750CA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		801B7EA22A00B31D008750CA /* StocksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAPI.swift; sourceTree = "<group>"; };
+		801B7EA72A00B582008750CA /* MockStocksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStocksAPI.swift; sourceTree = "<group>"; };
+		801B7EA92A00C023008750CA /* TickerListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListRepository.swift; sourceTree = "<group>"; };
+		801B7EAB2A00C064008750CA /* MockTickerListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTickerListRepository.swift; sourceTree = "<group>"; };
+		801B7EB02A00CFB3008750CA /* StockTickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTickerView.swift; sourceTree = "<group>"; };
+		801B7EB22A00CFC8008750CA /* TickerQuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerQuoteViewModel.swift; sourceTree = "<group>"; };
+		801B7EB42A00D1CE008750CA /* DateRangePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangePickerView.swift; sourceTree = "<group>"; };
+		801B7EB82A00D312008750CA /* QuoteDetailRowColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailRowColumnView.swift; sourceTree = "<group>"; };
+		801B7EBA2A00D360008750CA /* Foundation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extensions.swift"; sourceTree = "<group>"; };
+		801B7EBC2A01941C008750CA /* ChartViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewData.swift; sourceTree = "<group>"; };
+		801B7EBE2A019493008750CA /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		801B7EC02A019600008750CA /* Chart+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart+Stubs.swift"; sourceTree = "<group>"; };
+		801B7EC22A0196C2008750CA /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		801B7EC42A01B236008750CA /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		801B7EC62A01B92A008750CA /* YTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTView.swift; sourceTree = "<group>"; };
+		801B7EC82A01F050008750CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		801B7ED32A01F1D9008750CA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		801B7ED52A01F315008750CA /* BlogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogApp.swift; sourceTree = "<group>"; };
+		801B7ED72A01F87B008750CA /* BlogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewModel.swift; sourceTree = "<group>"; };
+		801B7ED92A01F890008750CA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		801B7EDB2A01FE71008750CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		801B7EDD2A0211FE008750CA /* CreatePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePost.swift; sourceTree = "<group>"; };
+		801B7EDF2A021623008750CA /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		8033EADB2A04FB2700969255 /* Foundation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+Extensions.swift"; sourceTree = "<group>"; };
+		8033EADC2A04FB2700969255 /* ChartRange+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChartRange+Extensions.swift"; sourceTree = "<group>"; };
+		8033EADD2A04FB2700969255 /* Quote+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Quote+Extensions.swift"; sourceTree = "<group>"; };
+		8052099D2A02D65100A0B4D3 /* ChatGPTAPIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPIModels.swift; sourceTree = "<group>"; };
+		805209A22A02D6A300A0B4D3 /* DotLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotLoadingView.swift; sourceTree = "<group>"; };
+		808665062A04F99A001CF313 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8086650E2A04FA6D001CF313 /* ChartRange+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChartRange+Extensions.swift"; sourceTree = "<group>"; };
+		80A9FD172A02F1F6008012E4 /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
+		80ABDF152A04D51000D96CD2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +125,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801B7ECE2A01F15E008750CA /* FirebaseDatabase in Frameworks */,
+				8008C4092A02DC7B008341FA /* ChatGPTSwift in Frameworks */,
+				801B7EA62A00B52A008750CA /* XCAStocksAPI in Frameworks */,
+				801B7E7C2A00A342008750CA /* StocksAPI in Frameworks */,
+				801B7ED22A01F15E008750CA /* FirebaseFirestoreSwift in Frameworks */,
+				801B7EE72A0255E1008750CA /* OpenAISwift in Frameworks */,
+				801B7E7E2A00A342008750CA /* StocksAPIExec in Frameworks */,
+				801B7ECC2A01F15E008750CA /* FirebaseAuth in Frameworks */,
+				801B7ED02A01F15E008750CA /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8008C4062A02DC30008341FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		801B7E602A00A164008750CA = {
 			isa = PBXGroup;
 			children = (
 				801B7E6B2A00A164008750CA /* StocksApp */,
 				801B7E6A2A00A164008750CA /* Products */,
+				8008C4062A02DC30008341FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +167,16 @@
 		801B7E6B2A00A164008750CA /* StocksApp */ = {
 			isa = PBXGroup;
 			children = (
-				801B7E6C2A00A164008750CA /* StocksAppApp.swift */,
-				801B7E6E2A00A164008750CA /* ContentView.swift */,
+				801B7E6C2A00A164008750CA /* StocksApp.swift */,
+				801B7EA12A00B308008750CA /* Services */,
+				801B7E982A00A7B4008750CA /* Extensions */,
+				801B7E912A00A6CA008750CA /* Mocks & Stubs */,
+				801B7E8E2A00A666008750CA /* View Models */,
+				801B7E822A00A49A008750CA /* Views */,
+				801B7E812A00A413008750CA /* Models */,
 				801B7E702A00A166008750CA /* Assets.xcassets */,
 				801B7E722A00A166008750CA /* Preview Content */,
+				801B7E962A00A78A008750CA /* Utils.swift */,
 			);
 			path = StocksApp;
 			sourceTree = "<group>";
@@ -65,6 +187,109 @@
 				801B7E732A00A166008750CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		801B7E812A00A413008750CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				801B7E7F2A00A3C6008750CA /* TickerListRowData.swift */,
+				801B7E9B2A00AD77008750CA /* FetchPhase.swift */,
+				801B7EBC2A01941C008750CA /* ChartViewData.swift */,
+				801B7ED92A01F890008750CA /* Post.swift */,
+				8052099D2A02D65100A0B4D3 /* ChatGPTAPIModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		801B7E822A00A49A008750CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				801B7EC82A01F050008750CA /* GoogleService-Info.plist */,
+				808665062A04F99A001CF313 /* GoogleService-Info.plist */,
+				805209A22A02D6A300A0B4D3 /* DotLoadingView.swift */,
+				801B7E872A00A561008750CA /* Common */,
+				801B7EAD2A00CF86008750CA /* Stock Ticker Sheet Views */,
+				801B7E6E2A00A164008750CA /* MainListView.swift */,
+				801B7E852A00A502008750CA /* TickerListRowView.swift */,
+				801B7E9F2A00AE0A008750CA /* SearchView.swift */,
+				801B7EC42A01B236008750CA /* LearnView.swift */,
+				801B7EC62A01B92A008750CA /* YTView.swift */,
+				801B7ED32A01F1D9008750CA /* Home.swift */,
+				801B7ED52A01F315008750CA /* BlogApp.swift */,
+				801B7EDB2A01FE71008750CA /* ContentView.swift */,
+				801B7EDD2A0211FE008750CA /* CreatePost.swift */,
+				801B7EDF2A021623008750CA /* TextView.swift */,
+				80A9FD172A02F1F6008012E4 /* ContentView1.swift */,
+				80ABDF152A04D51000D96CD2 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		801B7E872A00A561008750CA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				801B7E882A00A572008750CA /* EmptyStateView.swift */,
+				801B7E8A2A00A602008750CA /* ErrorStateView.swift */,
+				801B7E8C2A00A644008750CA /* LoadingStateView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		801B7E8E2A00A666008750CA /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				801B7E8F2A00A674008750CA /* AppViewModel.swift */,
+				801B7E942A00A73D008750CA /* QuotesViewModel.swift */,
+				801B7E9D2A00ADC0008750CA /* SearchViewModel.swift */,
+				801B7EB22A00CFC8008750CA /* TickerQuoteViewModel.swift */,
+				801B7EBE2A019493008750CA /* ChartViewModel.swift */,
+				801B7ED72A01F87B008750CA /* BlogViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		801B7E912A00A6CA008750CA /* Mocks & Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				801B7EAB2A00C064008750CA /* MockTickerListRepository.swift */,
+				801B7E922A00A6F1008750CA /* Stubs.swift */,
+				801B7EA72A00B582008750CA /* MockStocksAPI.swift */,
+				801B7EC02A019600008750CA /* Chart+Stubs.swift */,
+			);
+			path = "Mocks & Stubs";
+			sourceTree = "<group>";
+		};
+		801B7E982A00A7B4008750CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8033EADC2A04FB2700969255 /* ChartRange+Extensions.swift */,
+				8033EADB2A04FB2700969255 /* Foundation+Extensions.swift */,
+				8033EADD2A04FB2700969255 /* Quote+Extensions.swift */,
+				8086650E2A04FA6D001CF313 /* ChartRange+Extensions.swift */,
+				801B7EBA2A00D360008750CA /* Foundation+Extensions.swift */,
+				801B7E992A00A7C6008750CA /* Quote+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		801B7EA12A00B308008750CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				801B7EA22A00B31D008750CA /* StocksAPI.swift */,
+				801B7EA92A00C023008750CA /* TickerListRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		801B7EAD2A00CF86008750CA /* Stock Ticker Sheet Views */ = {
+			isa = PBXGroup;
+			children = (
+				801B7EB02A00CFB3008750CA /* StockTickerView.swift */,
+				801B7EB42A00D1CE008750CA /* DateRangePickerView.swift */,
+				801B7EB82A00D312008750CA /* QuoteDetailRowColumnView.swift */,
+				801B7EC22A0196C2008750CA /* ChartView.swift */,
+			);
+			path = "Stock Ticker Sheet Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +308,17 @@
 			dependencies = (
 			);
 			name = StocksApp;
+			packageProductDependencies = (
+				801B7E7B2A00A342008750CA /* StocksAPI */,
+				801B7E7D2A00A342008750CA /* StocksAPIExec */,
+				801B7EA52A00B52A008750CA /* XCAStocksAPI */,
+				801B7ECB2A01F15E008750CA /* FirebaseAuth */,
+				801B7ECD2A01F15E008750CA /* FirebaseDatabase */,
+				801B7ECF2A01F15E008750CA /* FirebaseFirestore */,
+				801B7ED12A01F15E008750CA /* FirebaseFirestoreSwift */,
+				801B7EE62A0255E1008750CA /* OpenAISwift */,
+				8008C4082A02DC7B008341FA /* ChatGPTSwift */,
+			);
 			productName = StocksApp;
 			productReference = 801B7E692A00A164008750CA /* StocksApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +347,13 @@
 				Base,
 			);
 			mainGroup = 801B7E602A00A164008750CA;
+			packageReferences = (
+				801B7E7A2A00A342008750CA /* XCRemoteSwiftPackageReference "StocksAPI" */,
+				801B7EA42A00B52A008750CA /* XCRemoteSwiftPackageReference "XCAStocksAPI" */,
+				801B7ECA2A01F15E008750CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				801B7EE52A0255E1008750CA /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				8008C4072A02DC7B008341FA /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+			);
 			productRefGroup = 801B7E6A2A00A164008750CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +369,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				801B7E742A00A166008750CA /* Preview Assets.xcassets in Resources */,
+				808665072A04F99A001CF313 /* GoogleService-Info.plist in Resources */,
 				801B7E712A00A166008750CA /* Assets.xcassets in Resources */,
+				801B7EC92A01F050008750CA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +382,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				801B7E6F2A00A164008750CA /* ContentView.swift in Sources */,
-				801B7E6D2A00A164008750CA /* StocksAppApp.swift in Sources */,
+				801B7E932A00A6F1008750CA /* Stubs.swift in Sources */,
+				801B7EC72A01B92A008750CA /* YTView.swift in Sources */,
+				801B7EB12A00CFB3008750CA /* StockTickerView.swift in Sources */,
+				8052099E2A02D65100A0B4D3 /* ChatGPTAPIModels.swift in Sources */,
+				801B7E8D2A00A644008750CA /* LoadingStateView.swift in Sources */,
+				801B7EBB2A00D360008750CA /* Foundation+Extensions.swift in Sources */,
+				801B7E9C2A00AD77008750CA /* FetchPhase.swift in Sources */,
+				801B7EC32A0196C2008750CA /* ChartView.swift in Sources */,
+				801B7EBF2A019493008750CA /* ChartViewModel.swift in Sources */,
+				801B7E6F2A00A164008750CA /* MainListView.swift in Sources */,
+				801B7E952A00A73D008750CA /* QuotesViewModel.swift in Sources */,
+				801B7EB32A00CFC8008750CA /* TickerQuoteViewModel.swift in Sources */,
+				801B7ED82A01F87B008750CA /* BlogViewModel.swift in Sources */,
+				801B7EC12A019600008750CA /* Chart+Stubs.swift in Sources */,
+				801B7EDC2A01FE71008750CA /* ContentView.swift in Sources */,
+				801B7E902A00A674008750CA /* AppViewModel.swift in Sources */,
+				801B7ED42A01F1D9008750CA /* Home.swift in Sources */,
+				801B7EE02A021623008750CA /* TextView.swift in Sources */,
+				801B7E6D2A00A164008750CA /* StocksApp.swift in Sources */,
+				8033EAE02A04FB2800969255 /* Quote+Extensions.swift in Sources */,
+				801B7EAA2A00C023008750CA /* TickerListRepository.swift in Sources */,
+				80A9FD182A02F1F6008012E4 /* ContentView1.swift in Sources */,
+				801B7EB52A00D1CE008750CA /* DateRangePickerView.swift in Sources */,
+				801B7EDE2A0211FE008750CA /* CreatePost.swift in Sources */,
+				801B7EDA2A01F890008750CA /* Post.swift in Sources */,
+				801B7ED62A01F315008750CA /* BlogApp.swift in Sources */,
+				801B7E892A00A572008750CA /* EmptyStateView.swift in Sources */,
+				801B7E9E2A00ADC0008750CA /* SearchViewModel.swift in Sources */,
+				8033EADE2A04FB2800969255 /* Foundation+Extensions.swift in Sources */,
+				8033EADF2A04FB2800969255 /* ChartRange+Extensions.swift in Sources */,
+				801B7E972A00A78A008750CA /* Utils.swift in Sources */,
+				801B7EA02A00AE0A008750CA /* SearchView.swift in Sources */,
+				801B7EA32A00B31D008750CA /* StocksAPI.swift in Sources */,
+				801B7EA82A00B582008750CA /* MockStocksAPI.swift in Sources */,
+				801B7EBD2A01941C008750CA /* ChartViewData.swift in Sources */,
+				801B7EAC2A00C064008750CA /* MockTickerListRepository.swift in Sources */,
+				801B7EB92A00D312008750CA /* QuoteDetailRowColumnView.swift in Sources */,
+				805209A82A02D6A300A0B4D3 /* DotLoadingView.swift in Sources */,
+				80ABDF162A04D51000D96CD2 /* SignInView.swift in Sources */,
+				801B7EC52A01B236008750CA /* LearnView.swift in Sources */,
+				801B7E8B2A00A603008750CA /* ErrorStateView.swift in Sources */,
+				8086650F2A04FA6D001CF313 /* ChartRange+Extensions.swift in Sources */,
+				801B7E802A00A3C6008750CA /* TickerListRowData.swift in Sources */,
+				801B7E9A2A00A7C6008750CA /* Quote+Extensions.swift in Sources */,
+				801B7E862A00A502008750CA /* TickerListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +563,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +593,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +629,97 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8008C4072A02DC7B008341FA /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		801B7E7A2A00A342008750CA /* XCRemoteSwiftPackageReference "StocksAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VaibhavRajani/StocksAPI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		801B7EA42A00B52A008750CA /* XCRemoteSwiftPackageReference "XCAStocksAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAStocksAPI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		801B7ECA2A01F15E008750CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		801B7EE52A0255E1008750CA /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8008C4082A02DC7B008341FA /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8008C4072A02DC7B008341FA /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
+		};
+		801B7E7B2A00A342008750CA /* StocksAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 801B7E7A2A00A342008750CA /* XCRemoteSwiftPackageReference "StocksAPI" */;
+			productName = StocksAPI;
+		};
+		801B7E7D2A00A342008750CA /* StocksAPIExec */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 801B7E7A2A00A342008750CA /* XCRemoteSwiftPackageReference "StocksAPI" */;
+			productName = StocksAPIExec;
+		};
+		801B7EA52A00B52A008750CA /* XCAStocksAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 801B7EA42A00B52A008750CA /* XCRemoteSwiftPackageReference "XCAStocksAPI" */;
+			productName = XCAStocksAPI;
+		};
+		801B7ECB2A01F15E008750CA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 801B7ECA2A01F15E008750CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		801B7ECD2A01F15E008750CA /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 801B7ECA2A01F15E008750CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		801B7ECF2A01F15E008750CA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 801B7ECA2A01F15E008750CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		801B7ED12A01F15E008750CA /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 801B7ECA2A01F15E008750CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		801B7EE62A0255E1008750CA /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 801B7EE52A0255E1008750CA /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 801B7E612A00A164008750CA /* Project object */;
 }
