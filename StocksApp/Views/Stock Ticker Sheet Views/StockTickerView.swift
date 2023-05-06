@@ -30,7 +30,6 @@ struct StockTickerView: View {
                 await quoteVM.fetchQuote()
             }
             await chartVM.fetchData()
-            
         }
     }
     
@@ -62,8 +61,8 @@ struct StockTickerView: View {
             
             Divider().padding([.horizontal, .top])
             
-            quoteDetailRowView
-                .frame(maxWidth: .infinity, minHeight: 80)
+//            quoteDetailRowView
+//                .frame(maxWidth: .infinity, minHeight: 80)
             
             
         }
@@ -228,7 +227,7 @@ struct StockTickerView_Previews: PreviewProvider {
     static var errorStubsQuoteVM: TickerQuoteViewModel = {
        var mockAPI = MockStocksAPI()
         mockAPI.stubbedFetchQuotesCallback = {
-            throw NSError(domain: "error", code: 0, userInfo: [NSLocalizedDescriptionKey: "An error has been occured"])
+            throw NSError(domain: "error", code: 0, userInfo: [NSLocalizedDescriptionKey: "An error has occured"])
         }
         return TickerQuoteViewModel(ticker: .stub, stocksAPI: mockAPI)
     }()

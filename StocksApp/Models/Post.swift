@@ -46,5 +46,5 @@ enum PostType: String, CaseIterable, Codable{
     case Header = "Header"
     case SubHeading = "SubHeading"
     case Paragraph = "Paragraph"
-    case Image = "Imaage"
+    case Image = "Image"
 }

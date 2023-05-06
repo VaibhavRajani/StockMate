@@ -53,6 +53,7 @@ struct SignInView: View {
                 .foregroundColor(.blue)
             }
         }
+        
         .alert(isPresented: $showWelcomeAlert) {
             Alert(title: Text("Welcome to Stockmate - Blog"), message: Text("You have successfully signed in or signed up"), dismissButton: .default(Text("OK")))
         }

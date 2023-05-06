@@ -41,10 +41,15 @@ class TickerPlistRepository: TickerListRepository {
     
     
     func load() throws -> [Ticker] {
-        let data = try Data(contentsOf: url)
-        let current = try PropertyListDecoder().decode([Ticker].self, from: data)
-        self.saved = current
-        return current
+        if FileManager.default.fileExists(atPath: url.path) {
+            let data = try Data(contentsOf: url)
+            let current = try PropertyListDecoder().decode([Ticker].self, from: data)
+            self.saved = current
+            return current
+        } else {
+            throw NSError(domain: "TickerPlistRepository", code: 1, userInfo: [NSLocalizedDescriptionKey: "File not found: \(url.path)"])
+        }
     }
+
     
 }

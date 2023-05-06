@@ -12,7 +12,7 @@ final class ViewModel: ObservableObject {
     private var client: OpenAISwift?
 
     func setup() {
-        client = OpenAISwift(authToken: "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")
+        client = OpenAISwift(authToken: "<api_key>")
     }
 
     func send(text: String, completion: @escaping (String) -> Void) {
@@ -69,6 +69,8 @@ struct ContentView1: View {
                 .padding()
             }
         }
+        .background(Color.teal)
+
         .onAppear {
             viewModel.setup()
         }

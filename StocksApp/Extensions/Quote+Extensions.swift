@@ -2,7 +2,7 @@
 //  Quote+Extensions.swift
 //  StocksApp
 //
-//  Created by Alfian Losari on 01/10/22.
+//  Created by Vaibhav on 01/05/23.
 //
 
 import Foundation
