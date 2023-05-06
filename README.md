@@ -1,4 +1,6 @@
-# Swift UI Stocks App
+# StockMate
+
+Swift UI Stocks App
 
 - Chart View and Custom Watchlist
 - Yahoo Finance
