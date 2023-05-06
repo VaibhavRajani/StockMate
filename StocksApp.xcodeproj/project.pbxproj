@@ -202,23 +202,18 @@
 		801B7E822A00A49A008750CA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				801B7EAD2A00CF86008750CA /* Stock Ticker Sheet Views */,
+				801B7E872A00A561008750CA /* Common */,
+				80E839BB2A070DC1004B4F28 /* YouTube Learn Views */,
+				80E839BA2A070D98004B4F28 /* Blog Views */,
+				80E839B92A070D35004B4F28 /* ChatGPT Views */,
 				8087AF9B2A05B5500034916B /* GoogleService-Info.plist */,
 				808EB5D92A060B1D00DA67DA /* GoogleService-Info.plist */,
 				805209A22A02D6A300A0B4D3 /* DotLoadingView.swift */,
-				801B7E872A00A561008750CA /* Common */,
-				801B7EAD2A00CF86008750CA /* Stock Ticker Sheet Views */,
 				801B7E6E2A00A164008750CA /* MainListView.swift */,
 				801B7E852A00A502008750CA /* TickerListRowView.swift */,
 				801B7E9F2A00AE0A008750CA /* SearchView.swift */,
-				801B7EC42A01B236008750CA /* LearnView.swift */,
-				801B7EC62A01B92A008750CA /* YTView.swift */,
-				801B7ED32A01F1D9008750CA /* Home.swift */,
-				801B7ED52A01F315008750CA /* BlogApp.swift */,
-				801B7EDB2A01FE71008750CA /* ContentView.swift */,
-				801B7EDD2A0211FE008750CA /* CreatePost.swift */,
 				801B7EDF2A021623008750CA /* TextView.swift */,
-				80A9FD172A02F1F6008012E4 /* ContentView1.swift */,
-				80ABDF152A04D51000D96CD2 /* SignInView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +280,35 @@
 				801B7EC22A0196C2008750CA /* ChartView.swift */,
 			);
 			path = "Stock Ticker Sheet Views";
+			sourceTree = "<group>";
+		};
+		80E839B92A070D35004B4F28 /* ChatGPT Views */ = {
+			isa = PBXGroup;
+			children = (
+				80A9FD172A02F1F6008012E4 /* ContentView1.swift */,
+			);
+			path = "ChatGPT Views";
+			sourceTree = "<group>";
+		};
+		80E839BA2A070D98004B4F28 /* Blog Views */ = {
+			isa = PBXGroup;
+			children = (
+				801B7ED32A01F1D9008750CA /* Home.swift */,
+				801B7ED52A01F315008750CA /* BlogApp.swift */,
+				801B7EDB2A01FE71008750CA /* ContentView.swift */,
+				801B7EDD2A0211FE008750CA /* CreatePost.swift */,
+				80ABDF152A04D51000D96CD2 /* SignInView.swift */,
+			);
+			path = "Blog Views";
+			sourceTree = "<group>";
+		};
+		80E839BB2A070DC1004B4F28 /* YouTube Learn Views */ = {
+			isa = PBXGroup;
+			children = (
+				801B7EC42A01B236008750CA /* LearnView.swift */,
+				801B7EC62A01B92A008750CA /* YTView.swift */,
+			);
+			path = "YouTube Learn Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
